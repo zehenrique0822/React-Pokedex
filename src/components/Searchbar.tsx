@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { searchPokemon } from "../services/api";
-import { Pokemon } from "../types/Pokemon";
+import { PokemonType } from "../types/PokemonType";
 
 export const Searchbar = () => {
     const [search, setSearch] = useState<string>('');
-    const [pokemon, setPokemon] = useState<Pokemon>();
+    const [pokemon, setPokemon] = useState<PokemonType>();
     const onChangeHandler = (e: { target: { value: string } }) => {
         setSearch(e.target.value)
     };  
@@ -26,7 +26,7 @@ export const Searchbar = () => {
             <div className="searchbar-btn">
                 <button onClick={onButtonClickHandler}>Buscar</button>
             </div>
-            {pokemon &&  
+            {pokemon &&   
             <div>
                 <div>{pokemon.name}</div> 
                 <div>{pokemon.weight}</div> 

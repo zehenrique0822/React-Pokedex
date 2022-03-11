@@ -1,7 +1,7 @@
 import { PokemonType } from "../types/PokemonType";
 
 type Props = {
-    pokemon: PokemonType;
+    pokemon: PokemonType
 };
 
 export const Pokemon = ({ pokemon }: Props) => {

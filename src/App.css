@@ -2,12 +2,24 @@
   margin: 0px;
 }
 
+body {
+  background-color: #2C65B3;
+  margin: 0px 50px;
+}
+
 nav {
   height: 100px;
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
-  align-items: center;
+  justify-content:center;
+  align-items: center;  
+}
+
+.favorites {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin: 0px 50px;
 }
 
 .navbar-img {
@@ -20,22 +32,36 @@ nav {
   justify-content: center;
 }
 .searchbar {
-  background-color: white;
   margin-right: 20px;
 } 
 .searchbar input {
   padding: 10px;
   box-shadow: 0px 2px (0,0,0,0.25);
   border-radius: 3px;
+  border-radius: 10px;
+  border: none;
 } 
 .searchbar-btn button {
-  background-color: #0e6f9f;
+  background-color: #FECA1B;
   border: none;
   border-radius: 10px;
-  height: 44px;
-  color: white;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2C65B3;
   padding: 10px 12px;
   cursor: pointer;
+}
+
+.seta {
+  width: 40px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.setaButton {
+  border: none;
+  background-color: #2C65B3;
 }
 
 .App {
@@ -48,6 +74,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  color: white;
 }
 
 .pokedex-grid {
@@ -60,7 +87,7 @@ nav {
   display: flex;  
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
-  background-color: blanchedalmond ;
+  background-color: white ;
 }
 
 .pokemon-image {
@@ -119,7 +146,9 @@ nav {
 .pagination-container {
   margin-left: 20px;
   display: flex;
-  align-items: center;
+  align-items: center;  
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .App {

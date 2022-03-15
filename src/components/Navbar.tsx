@@ -17,7 +17,7 @@ export const Navbar = () => {
       <div>
         <img src={logoImg} alt="Logo PokeApi" className="navbar-img"></img>
       </div>
-      <div>{favorites.length} ❤️</div>
+      <div className="favorites">{favorites.length} ❤️</div>
     </nav>
   );
 };

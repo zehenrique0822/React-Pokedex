@@ -6,7 +6,7 @@ nav {
   height: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
   align-items: center;
 }
 
@@ -16,9 +16,8 @@ nav {
 
 .searchbar-container {
   display: flex;
-  margin: 0px auto;
   padding: 0 20px;
-  align-items: center;
+  justify-content: center;
 }
 .searchbar {
   background-color: white;
@@ -46,7 +45,7 @@ nav {
 .pokedex-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10px;
 }
@@ -59,7 +58,7 @@ nav {
 
 .pokemon-card {
   display: flex;  
-  box-shadow: 4px 4px 4px (0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   background-color: blanchedalmond ;
 }
@@ -111,14 +110,24 @@ nav {
 
 .pokemon-heart-btn {
   cursor: pointer;
+  background-color: white;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  padding: 4px;
 }
 
 .pagination-container {
+  margin-left: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 .App {
   text-align: center;
+}
+
+.not-found-text {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 20px;
 }

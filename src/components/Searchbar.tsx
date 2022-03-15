@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import { searchPokemon } from "../services/api";
-import { PokemonType } from "../types/PokemonType";
 
-export const Searchbar = () => {
+type Props = {
+    onSearch: (pokemon: string) => void;
+  };
+
+export const Searchbar = ({ onSearch }: Props) => {
     const [search, setSearch] = useState<string>('');
-    const [pokemon, setPokemon] = useState<PokemonType>();
+
     const onChangeHandler = (e: { target: { value: string } }) => {
         setSearch(e.target.value)
+        if(e.target.value.length === 0) {
+            onSearch('')
+        }
     };  
 
-    const onSearchHandler = async (pokemon: string) => {
-        const result = await searchPokemon(pokemon)
-        setPokemon(result)
-    };
-
     const onButtonClickHandler = () => {
-        onSearchHandler(search)
+        onSearch(search)
     };
 
     return (
@@ -25,14 +25,7 @@ export const Searchbar = () => {
             </div>
             <div className="searchbar-btn">
                 <button onClick={onButtonClickHandler}>Buscar</button>
-            </div>
-            {pokemon &&   
-            <div>
-                <div>{pokemon.name}</div> 
-                <div>{pokemon.weight}</div> 
-                <img src={pokemon.sprites.front_default} alt="Imagem do {pokemon.name}"/> 
-            </div>
-            } 
+            </div>           
     </div >
   );
 };

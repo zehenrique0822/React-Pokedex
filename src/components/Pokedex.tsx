@@ -12,13 +12,13 @@ type Props = {
 
 export const Pokedex = ({ pokemons, loading, page, totalPages, setPage }: Props) => {
   const onLeftClickHandler = () => {
-    if(page > 0) {
-      setPage(page-1)
+    if (page > 0) {
+      setPage(page - 1)
     }
   };
   const onRigthClickHandler = () => {
-    if(page+1 !== totalPages) {
-      setPage(page+1)
+    if (page + 1 !== totalPages) {
+      setPage(page + 1)
     }
   };
   return (

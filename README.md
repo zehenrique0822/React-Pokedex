@@ -13,6 +13,7 @@
 #### Adição de pokemons aos favoritos com Context API e persistencia com Local Storage.
 
 ## 🔧 Funcionalidades Futuras:
+#### Responsividade
 #### Tela de pokemons favoritos.
 #### Tela de detalhes do pokemon.
 #### Melhoria de design

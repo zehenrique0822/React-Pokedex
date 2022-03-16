@@ -21,7 +21,7 @@
 ## 💡 Tecnologias Utilizadas:
 #### - HTML
 #### - CSS
-#### - REACT ( Styled Components, Hooks, Context API )
+#### - REACT ( Hooks, Context API )
 #### - TYPESCRIPT
 #### - LOCAL STORAGE - Para persistencia dos dados
 

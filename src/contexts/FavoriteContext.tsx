@@ -36,8 +36,10 @@ export const FavoriteProvider = ({ children }: FavoriteContextProps) => {
   };
  
   const loadFavoritePokemons = () => {
-    const pokemons: any = window.localStorage.getItem(favoritesKey) || [];    
+    const pokemons: any = window.localStorage.getItem(favoritesKey) || "[]";    
+    console.log('1',pokemons);
     const FavoritePokemonsLS = JSON.parse(pokemons);
+    console.log('2',FavoritePokemonsLS);
     setFavorites(FavoritePokemonsLS);
   };
 
